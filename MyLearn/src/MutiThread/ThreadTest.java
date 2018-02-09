@@ -1,4 +1,4 @@
-package toobject;
+package MutiThread;
 
 /*
  * runnable和thread的区别
@@ -6,7 +6,7 @@ package toobject;
  *MyRunnable:  run()  解释：Thread 类中 star（）方法调用 run()启动并执行线程，线程的
  *执行体在 run（）方法中
  */
-class MyThread extends  Thread{ 
+class MyThread1 extends  Thread{
 	public void  run(){ System.out.println("MyThread:  run()");
 	}
 	public void  start(){ System.out.println("MyThread:  start()");
@@ -21,10 +21,11 @@ class MyRunnable implements  Runnable{
 }
 
 public class ThreadTest  {
-public static  void  main(String args[]){ MyThread myThread	  =	new MyThread();
-MyRunnable  myRunnable  = new MyRunnable(); Thread  thread	=	new Thread(myRunnable); 
-myThread.start();
-thread.start();
-}
+    public static  void  main(String args[]){
+        MyThread1 myThread	  =	new MyThread1();
+        MyRunnable  myRunnable  = new MyRunnable(); Thread  thread	=	new Thread(myRunnable);
+        myThread.start();
+        thread.start();
+    }
 }
 

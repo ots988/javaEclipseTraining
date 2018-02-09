@@ -1,4 +1,4 @@
-package toobject;
+package MutiThread;
 /*
  * 线程A向队列Q中不停写入数据，线程B从队列Q中不停读取数据（只要Q中有数据）。
  * 接口中有两个一个是向队列中写push方法 一个是从队列中读。
