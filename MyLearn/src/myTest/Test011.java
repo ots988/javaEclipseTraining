@@ -14,6 +14,9 @@ public  class Test011 {
 		System.out.println((k = old));
 
 	}
+
+	private static int a =5;
+
 	@Override
 	public int hashCode() {
 		return 123456;

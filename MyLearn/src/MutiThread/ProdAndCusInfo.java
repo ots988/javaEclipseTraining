@@ -5,7 +5,7 @@ class Info{	// 定义信息类
     private String content = "content" ;// 定义content属性，为了与下面set的content属性区别开
     private boolean flag = true ;	// 设置标志位,初始时先生产
     public synchronized void set(String name,String content){
-        while(!flag){
+        if(!flag){//while 有什么好处，if也可以
             try{
                 super.wait() ;
             }catch(InterruptedException e){
@@ -23,7 +23,7 @@ class Info{	// 定义信息类
         super.notify();
     }
     public synchronized void get(){
-        while(flag){
+        if(flag){
             try{
                 super.wait() ;
             }catch(InterruptedException e){

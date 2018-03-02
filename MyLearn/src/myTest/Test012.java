@@ -1,5 +1,22 @@
 package myTest;
 
+public class Test012{
+    public static void main(String[] args){
+        String i ="aa";
+//        aada dd =null;
+//        while(i>3){
+//            i--;
+//        }
+//        cha(dd);
+        System.out.println("sad11".indexOf("sadw"));
+    }
+    private  static  void cha(aada a){
+//        a.aa="sss";
+    }
+}
+class aada{
+    String aa ="aa";
+    }
 //
 //------------------
 //		Output:
